@@ -1,0 +1,76 @@
+.projet-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: rgb(90, 155, 216);
+  margin: 3px 3px 3px 3px;
+}
+.presentation-section{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px 12px 10px;
+  background-color: #0A192F;
+  align-items: center;
+  justify-content: center;
+  color: #CCD6F6;
+  border-radius: 10px;
+  max-width: auto;
+  margin: 10px 10px 10px 10px;
+  flex-direction: column;
+}
+ul.project-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px; /* Ajustado para um tamanho mais legível */
+}
+.project-list li {
+  display: flex; /* Coloca os itens (imagem e texto) lado a lado */
+  align-items: center; /* Alinha a imagem e o texto verticalmente */
+  gap: 20px; /* Adiciona um espaço entre a imagem e o texto */
+  margin-bottom: 40px; /* Adiciona espaço entre os projetos */
+  max-width: 900px; /* Define uma largura máxima para o item do projeto */
+}
+.project-list h3 {
+  font-size: 28px; /* Tamanho para o título do projeto */
+  align-items: center;
+}
+.project-list img {
+  max-width: fit-content;
+  height: 150px; /* Define uma altura fixa para as imagens */
+  position: relative;
+  z-index: 0;
+  opacity: 0.5; /* Deixa a imagem 50% transparente */
+  border-radius: 45px;
+  margin: 5px 5px 5px 5px;
+}
+.project-list img:hover {
+  opacity: 1
+}
+.project-details {
+  display: flex;
+  flex-direction: column; /* Empilha o título e o parágrafo verticalmente */
+}
+.cta-button{
+  width: 200px;
+  height: 50px;
+  background-color:#6f83a1;
+  color: #0f1f1b;
+  font-weight: bolder;
+  border-radius: 7px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.cta-button:hover{
+  background-color: #64ffdb8c;
+  color: #0A192F;
+
+}

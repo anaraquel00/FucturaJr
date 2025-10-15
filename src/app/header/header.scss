@@ -1,0 +1,88 @@
+// Paleta de Cores
+$azul-escuro: #0A192F;
+$verde-vibrante: #64FFDA;
+$branco: #FFFFFF;
+$cinza-claro: #E6F1FF;
+$cinza-medio: #8892B0;
+
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+  background-color: $azul-escuro;
+  color: $cinza-medio;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+ .spacer {
+   flex: 1 1 auto;
+ }
+
+ // Estilo para a imagem do logo
+.logo {
+  height: 40px; // Ajuste a altura conforme necessário
+  border-radius: 4px; // Suaviza as bordas da imagem
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+
+  a {
+    color: $cinza-medio;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $verde-vibrante;
+    }
+  }
+}
+
+// Dropdown básico
+.dropdown {
+  position: relative;
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $azul-escuro;
+    border: 1px solid rgba($verde-vibrante, 0.2);
+    border-radius: 4px;
+    padding: 8px 0;
+    min-width: 200px;
+    z-index: 100;
+  }
+
+  &:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px;
+
+  img {
+    height: 20px;
+    width: 20px;
+    color: $cinza-medio; // Cor base do SVG
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $verde-vibrante;
+    }
+  }
+}
