@@ -1,0 +1,117 @@
+.programmer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: rgb(131, 162, 190);
+  position: relative;
+  overflow: hidden;
+}
+.programmer-section{
+  display: flex;
+  padding: 5px 5px 12px 10px;
+  background-color: #0a192f60;
+  align-items: center;
+  justify-content: center;
+  color: #0a192f;
+  border-radius: 10px;
+  max-width: auto;
+  margin: 10px 10px 10px 10px;
+  flex-direction: column;
+}
+
+.programmers-details{
+  display: flex;
+  flex-direction: column; /* Empilha o título e o parágrafo verticalmente */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.programmers-details p:hover{
+  color: #000000;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+img.programmers-background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; // Coloca o vídeo atrás de todo o conteúdo
+  opacity: 0.4;
+}
+
+.team-leaders-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.leader-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Garante que o nome não saia do círculo */
+  border-radius: 50%;
+
+  .leader-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 25, 47, 0.85); /* Fundo escuro semitransparente */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .leader-name {
+    opacity: 1; /* Fica visível no hover */
+  }
+
+  &:hover .devs-image {
+    transform: scale(1.1);
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.devs-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.cta-button{
+  width: 200px;
+  height: 50px;
+  background-color:#0A192F;
+  color: #64acff;
+  border-radius: 3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+.cta-button:hover{
+  background-color: #356bbb;
+  color: #060f1d;
+
+}
