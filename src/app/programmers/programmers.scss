@@ -99,19 +99,19 @@ img.programmers-background-image{
   height: 50px;
   background-color:#0A192F;
   color: #64acff;
-  border-radius: 3px;
-  padding: 15px 32px;
+  border-radius: 6px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 
 }
 .cta-button:hover{
   background-color: #356bbb;
   color: #060f1d;
+  font-weight: bold;
 
 }

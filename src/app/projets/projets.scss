@@ -31,6 +31,7 @@ img.presentation-image{
   object-fit: cover;
   z-index: -1; // Coloca o vídeo atrás de todo o conteúdo
   opacity: 0.4;
+  border-radius: 10px;
 }
 
 ul.project-list {

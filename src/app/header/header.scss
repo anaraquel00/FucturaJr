@@ -48,11 +48,11 @@ $cinza-medio: #8892B0;
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: $azul-escuro;
     border: 1px solid rgba($verde-vibrante, 0.2);
     border-radius: 4px;
-    padding: 8px 0;
+    padding: 10px 2px 3px 2px;
     min-width: 200px;
     z-index: 100;
   }
