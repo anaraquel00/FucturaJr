@@ -50,7 +50,7 @@
                 }
               ],
               "outputHashing": "all",
-            "inlineFonts": false
+              "outputPath": "dist/browser"
             },
             "development": {
               "optimization": false,
