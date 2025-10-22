@@ -1,19 +1,16 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Header } from "./header/header";
-import { Home } from "./home/home";
 import { Footer } from "./footer/footer";
+import { Home } from "./home/home";
+import { Sobre } from "./sobre/sobre";
 import { Projets } from "./projets/projets";
 import { Programmers } from "./programmers/programmers";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Home, Footer, Projets, Programmers],
+  imports: [RouterOutlet, Header, Footer, Sobre, Projets, Programmers],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
-  protected readonly title = signal('FucturaJr');
-  constructor() {
-
-  }
-}
+export class App {}

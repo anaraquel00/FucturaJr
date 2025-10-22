@@ -1,0 +1,97 @@
+
+.team-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10%;
+  background-color: #f1eded;
+}
+
+.our-team-section {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  .team-group {
+    h2 {
+      font-size: 2.5rem;
+      color: #161f29;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      line-height: 1.6;
+    }
+  }
+
+  .team-members-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .member-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .member-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-top: 15px;
+    }
+
+    .member-role {
+      font-size: 1rem;
+      color: #3498db;
+      margin-top: 5px;
+    }
+  }
+}
+.devs-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+
+.cta-button{
+  width: 200px;
+  height: 50px;
+  background-color:#0A192F;
+  color: #64acff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 12px 2px;
+  cursor: pointer;
+
+}
+.cta-button:hover{
+  background-color: #356bbb;
+  color: #060f1d;
+  font-weight: bold;
+
+}
