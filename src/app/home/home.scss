@@ -55,7 +55,7 @@ img.welcome-image {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 3px 2px;
   cursor: pointer;
 
 
@@ -63,5 +63,37 @@ img.welcome-image {
 .cta-button:hover{
   background-color: #356bbb;
   color: #060f1d;
+}
 
+// Media Queries
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 40px;
+    max-width: 90%;
+  }
+
+  .welcome-section > h1 {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    width: 180px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section {
+    padding: 30px;
+  }
+
+  .welcome-section > h1 {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    width: 160px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }

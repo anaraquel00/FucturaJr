@@ -3,27 +3,31 @@
 
   <div class="spacer"></div>
 
-  <nav class="navigation">
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#programmers">Programadores</a>
-    <a href="#parterns">Empresas Parceiras</a>
-    <a href="https://fucturatecnologia.com.br/time-line" target="_blank" rel="noopener noreferrer">Linha do tempo da Fuctura</a>
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <span class="hamburger"></span>
+  </button>
+
+  <nav class="navigation" [class.active]="isMenuOpen">
+    <a href="#sobre" (click)="closeMenu()">Sobre</a>
+    <a href="#projetos" (click)="closeMenu()">Projetos</a>
+    <a href="#programmers" (click)="closeMenu()">Programadores</a>
+    <a href="#parterns" (click)="closeMenu()">Empresas Parceiras</a>
+    <a href="https://fucturatecnologia.com.br/time-line" target="_blank" rel="noopener noreferrer" (click)="closeMenu()">Linha do tempo da Fuctura</a>
     <div class="dropdown">
       <a href="#" class="dropdown-toggle">Nossos cursos</a>
       <div class="dropdown-menu">
-        <a href="#">Academia Premium</a>
-        <a href="#">Academia Python</a>
-        <a href="#">Academia Java</a>
-        <a href="#">Academia Redes Linux</a>
-        <a href="#">Curso de Programação para crianças</a>
+        <a href="#" (click)="closeMenu()">Academia Premium</a>
+        <a href="#" (click)="closeMenu()">Academia Python</a>
+        <a href="#" (click)="closeMenu()">Academia Java</a>
+        <a href="#" (click)="closeMenu()">Academia Redes Linux</a>
+        <a href="#" (click)="closeMenu()">Curso de Programação para crianças</a>
       </div>
     </div>
     <div class="dropdown">
       <a href="#" class="dropdown-toggle">Nossa Empresa Jr</a>
       <div class="dropdown-menu">
-        <a href="#">Projetos em andamento</a>
-        <a href="#">Projetos Concluídos</a>
+        <a href="#" (click)="closeMenu()">Projetos em andamento</a>
+        <a href="#" (click)="closeMenu()">Projetos Concluídos</a>
       </div>
     </div>
   </nav>

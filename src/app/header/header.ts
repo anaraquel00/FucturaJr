@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
-
+  closeMenu() {
+    //funçao de fechar o menu
+    this.isMenuOpen = false;
+  }
+  isMenuOpen: any;
+toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
 }
+}
+
+
+

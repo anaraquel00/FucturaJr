@@ -86,3 +86,56 @@
 .social-links a:hover, .legal-links a:hover {
   color: #64FFDA; /* Cor de destaque no hover */
 }
+
+// Media Queries
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-links, .legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .social-links a, .legal-links a {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 20px;
+  }
+
+  .footer-cta h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
