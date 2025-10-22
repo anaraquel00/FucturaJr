@@ -1,3 +1,9 @@
 {
-  "routes": {}
+  "routes": {
+    "/FucturaJr": {},
+    "/FucturaJr/programmers": {},
+    "/FucturaJr/programmers/colaboradores": {},
+    "/FucturaJr/projetos": {},
+    "/FucturaJr/sobre": {}
+  }
 }

@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/FucturaJr",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -28,12 +29,7 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -50,7 +46,7 @@
                 }
               ],
               "outputHashing": "all",
-              "outputPath": "dist/browser"
+              "outputPath": "dist/FucturaJr/browser"
             },
             "development": {
               "optimization": false,
@@ -94,7 +90,8 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/FucturaJr/"
+            "baseHref": "/FucturaJr/",
+            "buildTarget": "FucturaJr:build:production"
           }
         }
       }
